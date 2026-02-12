@@ -30,7 +30,7 @@ app.add_middleware(
 
 # KONFIGURASI AI GEMINI (FASTAPI VERSION)
 client = genai.Client(
-    api_key="AIzaSyDWn4HpL3u0KXpFK2J22_uEkEVvHvVogoE",
+    api_key="YOUR_API",
     http_options={'api_version': 'v1beta'}
 )
 
