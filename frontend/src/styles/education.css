@@ -1,0 +1,190 @@
+/* Container Utama */
+.education-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: #f8fafc;
+  color: #1e293b !important; /* Memaksa warna teks utama menjadi gelap */
+  font-family: 'Inter', -apple-system, sans-serif;
+}
+
+.edu-header { margin-bottom: 40px; text-align: left; }
+.edu-header h1 { font-size: 32px; color: #0f172a; margin-bottom: 10px; }
+.edu-header p { color: #64748b; font-size: 18px; }
+
+/* Artikel Styling */
+.edu-article {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 30px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.article-title {
+  color: #0f172a !important; /* Memaksa judul berwarna hitam tajam */
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #008744;
+  padding-bottom: 12px;
+}
+
+.article-content p, 
+.article-content li {
+  color: #334155 !important; /* Memaksa isi artikel berwarna gelap */
+  line-height: 1.8;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.guideline-list { padding-left: 20px; }
+
+/* --- NUTRITION SECTION (Custom Font) --- */
+.section-title {
+  color: #1e293b !important;
+  font-weight: 800;
+  font-size: 22px;
+  margin-bottom: 20px;
+  letter-spacing: -0.5px;
+}
+
+.nutrition-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.nutri-card {
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+}
+
+.nutri-status {
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.nutri-list { list-style: none; padding: 0; }
+.nutri-list li {
+  color: #1e293b !important;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  padding-left: 15px;
+  position: relative;
+}
+
+.nutri-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #64748b;
+}
+
+/* Bento Grid */
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.bento-item {
+  background: white;
+  padding: 30px;
+  border-radius: 24px;
+  border: 1px solid #e2e8f0;
+}
+
+.nutrition-board { grid-column: span 2; }
+
+/* Highlight Animation */
+.highlight-article {
+  animation: pulse-green 2s ease-in-out;
+  border: 2px solid #008744 !important;
+  background-color: #f0fdf4 !important; /* Warna hijau muda saat disorot */
+}
+
+@keyframes pulse-green {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.01); box-shadow: 0 0 20px rgba(0,135,68,0.2); }
+  100% { transform: scale(1); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .bento-grid { grid-template-columns: 1fr; }
+  .nutrition-board { grid-column: span 1; }
+}
+
+/* Container untuk seluruh grup protokol */
+.protocol-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Judul Kategori Protokol (misal: Gula Darah Rendah) */
+.protocol-subtitle {
+  font-size: 16px;
+  color: #0f172a;
+  font-weight: 700;
+  margin-bottom: 12px;
+  padding-left: 12px;
+  border-left: 4px solid #008744; /* Aksen hijau RSPG */
+}
+
+/* List langkah-langkah */
+.step-list-modern {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Baris langkah: Nomor dan Teks sejajar */
+.step-row-inline {
+  display: flex;
+  align-items: flex-start; /* Aligntment ke atas jika teks panjang */
+  gap: 10px;
+  padding: 10px 14px;
+  background: #f8fafc;
+  border-radius: 10px;
+  border: 1px solid #f1f5f9;
+  transition: all 0.2s ease;
+}
+
+.step-row-inline:hover {
+  background: #ffffff;
+  border-color: #e2e8f0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+/* Styling Nomor (1. 2. 3.) */
+.step-number {
+  color: #008744;
+  font-weight: 800;
+  font-size: 15px;
+  min-width: 22px; /* Memastikan nomor tidak tertekuk */
+}
+
+/* Styling Teks Isi */
+.step-text-content {
+  margin: 0;
+  font-size: 14.5px;
+  color: #334155 !important; /* Memastikan teks hitam terlihat */
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+/* Efek Premium Shadow pada Bento Item */
+.premium-shadow {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05) !important;
+  border: 1px solid #e2e8f0 !important;
+  background: #ffffff;
+}

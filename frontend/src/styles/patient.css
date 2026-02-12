@@ -1,0 +1,119 @@
+/* ===== HEADER ===== */
+.app-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 20px;
+  background: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.app-logo {
+  height: 42px;
+  width: auto;
+}
+
+.app-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1b5e20;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .app-logo {
+    height: 36px;
+  }
+
+  .app-title {
+    font-size: 16px;
+  }
+}
+
+/* ===== GLOBAL ===== */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #f6f8fa;
+}
+
+/* ===== STATUS CARD ===== */
+.status-card {
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.status-card.green {
+  background: #e8f5e9;
+  border-left: 6px solid #2e7d32;
+}
+
+.status-card.yellow {
+  background: #fffde7;
+  border-left: 6px solid #f9a825;
+}
+
+.status-card.red {
+  background: #fdecea;
+  border-left: 6px solid #c62828;
+}
+
+.status-card h3 {
+  margin: 0 0 8px;
+}
+
+.status-card p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* ===== ACTION BUTTON ===== */
+.action-button {
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  border: none;
+  background: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  cursor: pointer;
+}
+
+.action-button:hover {
+  background: #f0f0f0;
+}
+
+.action-button .icon {
+  font-size: 20px;
+}
+
+/* ===== SECTION CARD ===== */
+.section-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+.section-card h4 {
+  margin: 0 0 12px;
+  font-size: 16px;
+}
+
+/* ===== MOBILE FRIENDLY ===== */
+@media (max-width: 600px) {
+  .status-card {
+    padding: 16px;
+  }
+
+  .action-button {
+    font-size: 15px;
+  }
+}

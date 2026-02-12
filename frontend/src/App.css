@@ -1,0 +1,64 @@
+/* Layout Wrapper Utama */
+.app-layout-wrapper {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f8fafc;
+}
+
+.main-content-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.content-padding {
+  padding: 30px;
+  animation: fadeIn 0.5s ease;
+}
+
+/* Header Premium Style */
+.main-header-premium {
+  background: white;
+  height: 70px;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.system-tag {
+  color: #64748b;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.user-profile-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.user-info-text {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+}
+
+.welcome-txt { font-size: 11px; color: #94a3b8; }
+.user-name-txt { font-size: 14px; font-weight: 700; color: #008744; }
+
+.user-avatar-circle {
+  width: 40px;
+  height: 40px;
+  background: #f0fdf4;
+  color: #008744;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  border: 2px solid #008744;
+}

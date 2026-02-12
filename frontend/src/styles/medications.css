@@ -1,0 +1,396 @@
+:root {
+  --primary-green: #008744;
+  --bg-light: #f8fafc;
+  --slate-text: #1e293b;
+  --slate-sub: #64748b;
+  --border-color: #e2e8f0;
+}
+
+.medication-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  background-color: var(--bg-light);
+  min-height: 100vh;
+}
+
+.premium-card {
+  background: white;
+  border-radius: 20px;
+  padding: 35px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+  border: 1px solid var(--border-color);
+  margin-bottom: 40px;
+}
+
+.premium-header h2 {
+  color: var(--slate-text);
+  font-size: 24px;
+  margin: 0;
+  font-weight: 700;
+}
+
+.premium-header p {
+  color: var(--slate-sub);
+  font-size: 14px;
+  margin: 8px 0 30px;
+}
+
+/* FORM INLINE LAYOUT */
+.medication-form-premium {
+  display: flex;
+  gap: 20px;
+  align-items: flex-end;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.flex-grow-3 { flex: 3; }
+.flex-grow-1 { flex: 1; }
+
+.input-field label {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--slate-sub);
+  letter-spacing: 0.5px;
+}
+
+.input-field input, 
+.input-field select {
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  background: #ffffff;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.input-field input:focus {
+  border-color: var(--primary-green);
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(0, 135, 68, 0.1);
+}
+
+.btn-save-enterprise {
+  background: var(--primary-green);
+  color: white;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.btn-save-enterprise:hover {
+  background: #006b35;
+  transform: translateY(-2px);
+}
+
+/* HISTORY MODERN LIST */
+.history-wrapper h3 {
+  font-size: 18px;
+  color: var(--slate-text);
+  margin-bottom: 20px;
+}
+
+.medication-list-modern {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.medication-item-row {
+  background: white;
+  padding: 18px 25px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid transparent;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.01);
+  transition: all 0.3s ease;
+}
+
+.medication-item-row:hover {
+  border-color: var(--primary-green);
+  transform: scale(1.01);
+  box-shadow: 0 10px 15px rgba(0,0,0,0.02);
+}
+
+.item-main {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.schedule-badge {
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  min-width: 70px;
+  text-align: center;
+}
+
+.schedule-badge.pagi { background: #e0f2fe; color: #0369a1; }
+.schedule-badge.siang { background: #fef3c7; color: #92400e; }
+.schedule-badge.malam { background: #f1f5f9; color: #475569; }
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-info strong {
+  font-size: 16px;
+  color: var(--slate-text);
+}
+
+.item-info span {
+  font-size: 13px;
+  color: var(--slate-sub);
+}
+
+.item-meta {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+}
+
+.timestamp-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: var(--slate-sub);
+  margin-bottom: 4px;
+}
+
+.timestamp-val {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--slate-text);
+}
+
+.empty-state {
+  text-align: center;
+  color: var(--slate-sub);
+  padding: 40px;
+  font-style: italic;
+}
+
+:root {
+  --primary-green: #008744;
+  --bg-light: #f8fafc;
+  --slate-text: #1e293b;
+  --slate-sub: #64748b;
+  --border-color: #e2e8f0;
+}
+
+.medication-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  background-color: var(--bg-light);
+  min-height: 100vh;
+}
+
+.premium-card {
+  background: white;
+  border-radius: 20px;
+  padding: 35px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+  border: 1px solid var(--border-color);
+  margin-bottom: 40px;
+}
+
+.premium-header h2 {
+  color: var(--slate-text);
+  font-size: 24px;
+  margin: 0;
+  font-weight: 700;
+}
+
+.premium-header p {
+  color: var(--slate-sub);
+  font-size: 14px;
+  margin: 8px 0 30px;
+}
+
+/* FORM INLINE LAYOUT */
+.medication-form-premium {
+  display: flex;
+  gap: 20px;
+  align-items: flex-end;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.flex-grow-3 { flex: 3; }
+.flex-grow-1 { flex: 1; }
+
+.input-field label {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--slate-sub);
+  letter-spacing: 0.5px;
+}
+
+.input-field input, 
+.input-field select {
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  background: #ffffff;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.input-field input:focus {
+  border-color: var(--primary-green);
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(0, 135, 68, 0.1);
+}
+
+.btn-save-enterprise {
+  background: var(--primary-green);
+  color: white;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.btn-save-enterprise:hover {
+  background: #006b35;
+  transform: translateY(-2px);
+}
+
+/* HISTORY MODERN LIST */
+.history-wrapper h3 {
+  font-size: 18px;
+  color: var(--slate-text);
+  margin-bottom: 20px;
+}
+
+.medication-list-modern {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.medication-item-row {
+  background: white;
+  padding: 18px 25px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid transparent;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.01);
+  transition: all 0.3s ease;
+}
+
+.medication-item-row:hover {
+  border-color: var(--primary-green);
+  transform: scale(1.01);
+  box-shadow: 0 10px 15px rgba(0,0,0,0.02);
+}
+
+.item-main {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.schedule-badge {
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  min-width: 70px;
+  text-align: center;
+}
+
+.schedule-badge.pagi { background: #e0f2fe; color: #0369a1; }
+.schedule-badge.siang { background: #fef3c7; color: #92400e; }
+.schedule-badge.malam { background: #f1f5f9; color: #475569; }
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-info strong {
+  font-size: 16px;
+  color: var(--slate-text);
+}
+
+.item-info span {
+  font-size: 13px;
+  color: var(--slate-sub);
+}
+
+.item-meta {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+}
+
+.timestamp-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: var(--slate-sub);
+  margin-bottom: 4px;
+}
+
+.timestamp-val {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--slate-text);
+}
+
+.empty-state {
+  text-align: center;
+  color: var(--slate-sub);
+  padding: 40px;
+  font-style: italic;
+}
+
+/* Pastikan teks di dalam select option berwarna gelap */
+.input-field select {
+  color: #1e293b !important; /* Warna biru gelap agar terlihat */
+  background-color: #ffffff !important;
+  cursor: pointer;
+}
+
+.input-field select option {
+  color: #1e293b !important;
+  background: white !important;
+}
+
+/* Tambahkan ini jika tulisan di Badge Riwayat juga hilang */
+.schedule-badge {
+  display: inline-block;
+  color: #1e293b; /* Warna teks default */
+  font-weight: 800;
+}
+
+.schedule-badge.pagi { background: #e0f2fe; color: #0369a1 !important; }
+.schedule-badge.siang { background: #fef3c7; color: #92400e !important; }
+.schedule-badge.malam { background: #f1f5f9; color: #475569 !important; }

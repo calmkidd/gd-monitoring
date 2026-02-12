@@ -1,0 +1,212 @@
+/* login.css - Enterprise Level Design */
+
+:root {
+  --primary-blue: #f8fafc;
+  --gradient-left: linear-gradient(135deg, #f8fafc 0%, #f8fafc 100%);
+  --bg-light: #f8fafc; /* Putih keabuan profesional */
+  --text-dark: #334155;
+  --text-light: #111111;
+  --accent-green: #94e3b1; /* Sesuai tombol di gambar */
+  --accent-green-hover: #7cd69d;
+  --border-color: #e2e8f0;
+  --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.login-page {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+/* BAGIAN KIRI - ILUSTRASI */
+.login-left {
+  flex: 1.2; /* Sedikit lebih lebar untuk estetika */
+  background: var(--gradient-left);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 40px;
+}
+
+.login-logo {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  height: 60px; /* Sesuaikan ukuran logo */
+  width: auto;
+  object-fit: contain;
+}
+
+.login-left-content {
+  text-align: center;
+  color: var(--text-light);
+  max-width: 80%;
+}
+
+.login-left-content h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  letter-spacing: -0.025em;
+}
+
+.login-left-content p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-bottom: 40px;
+}
+
+.login-hero {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  filter: drop-shadow(0 20px 30px rgba(0,0,0,0.15));
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+/* BAGIAN KANAN - FORM LOGIN */
+.login-right {
+  flex: 0.8;
+  background-color: #d1e7d6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-card h2 {
+  font-size: 1.8rem;
+  color: var(--text-dark);
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.login-error {
+  background-color: #fee2e2;
+  color: #dc2626;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+  text-align: center;
+  border: 1px solid #fecaca;
+}
+
+.login-card label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background-color: #f1f5f9; /* Biru muda sangat pucat seperti gambar */
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.login-card input:focus {
+  outline: none;
+  border-color: var(--primary-blue);
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(30, 136, 229, 0.1);
+}
+
+.login-card button {
+  width: 100%;
+  padding: 14px;
+  background-color: var(--accent-green);
+  color: #144626; /* Teks hijau gelap untuk kontras */
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: 10px;
+}
+
+.login-card button:hover {
+  background-color: var(--accent-green-hover);
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .login-left {
+    display: none; /* Sembunyikan ilustrasi di layar kecil */
+  }
+  .login-right {
+    flex: 1;
+  }
+}
+
+.login-footer-links {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #64748b;
+}
+
+.login-footer-links span {
+  cursor: pointer;
+  transition: color 0.2s;
+  font-weight: 500;
+}
+
+.login-footer-links span:hover {
+  color: #008744; /* Hijau RSPG saat dihover */
+  text-decoration: underline;
+}
+
+.back-link {
+  color: #008744 !important;
+  font-weight: 700 !important;
+}
+
+.btn-primary-login {
+  width: 100%;
+  padding: 14px;
+  background: #008744;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+.btn-primary-login:hover {
+  background: #006b35;
+}
