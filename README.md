@@ -1,4 +1,4 @@
-# Sistem Informasi Pantau Gula Darah - RSPG
+# Sistem Informasi Pantau Gula Darah - RSPG SiPALA
 
 Sistem pemantauan diabetes real-time untuk **RS Petrokimia Gresik**, terintegrasi dengan **RSPG Medical AI** (Gemini 2.5 Flash).
 
@@ -23,3 +23,4 @@ Sistem pemantauan diabetes real-time untuk **RS Petrokimia Gresik**, terintegras
 - **Frontend**: React.js, Vite
 - **Backend**: FastAPI, SQLite
 - **AI Model**: Google Gemini 2.5 Flash (Update 2026)"
+
